@@ -40,15 +40,14 @@ class DLL:
             last = temp  
             temp = temp.next
         print("None")
-        
-        # Reverse Traversal
+
         print("Reverse Traversal:")
         while last:
             print(last.data, end=" <--> ")
             last = last.prev
         print("None")
 
-# Driver Code
+
 dll = DLL()
 n = int(input("Enter the number of elements: "))
 for i in range(n):
