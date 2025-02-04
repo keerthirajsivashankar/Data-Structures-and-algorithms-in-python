@@ -45,6 +45,10 @@ for i in range(n):
     l.insert_at_end(item)
 k = int(input("Enter the k : "))
 l.display()
-for i in range(k):
-    l.rotate()
-l.display()
+if k % n == 0:
+    l.display()
+else:
+    k = k % n 
+    for i in range(k):
+        l.rotate()
+    l.display()
