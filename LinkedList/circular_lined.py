@@ -21,8 +21,7 @@ class csll:
     def insert_at_end(self,data):
         nn = node(data)
         if self.head is None:
-            self.head = nn
-            nn.next = nn
+            self.insert_at_begin(data)
         else:
             temp = self.head
             while temp.next != self.head :
